@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | Time tracking dashboard</title>
+        <link rel="stylesheet" href="./assets/style.css" />
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="avatar--wrapper">
+                    <img
+                        width="50"
+                        src="./assets/images/image-jeremy.png"
+                        alt="Avatar Image" />
+                    <div>
+                        <p>Report for</p>
+                        <h1>Jeremy Robson</h1>
+                    </div>
+                </div>
+                <div class="dates--wrapper">
+                    <button type="button" class="time--button" value="daily">
+                        Daily
+                    </button>
+                    <button type="button" class="time--button" value="weekly">
+                        Weekly
+                    </button>
+                    <button type="button" class="time--button" value="monthly">
+                        Monthly
+                    </button>
+                </div>
+            </header>
+        </main>
+
+        <!-- reusable template -->
+        <template id="cardTemplate">
+            <article class="card--container">
+                <div class="details">
+                    <div class="details--header">
+                        <h2>Work</h2>
+                        <div class="svg--wrapper">
+                            <svg
+                                width="21"
+                                height="5"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                                    fill="#BBC0FF"
+                                    fill-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="details--content">
+                        <time datetime="" class="time--elapsed">32hrs</time>
+                        <p class="previous--duration">
+                            <span class="time--duration">Last Week</span> -
+                            <time datetime="" class="last-time-spent"
+                                >36hrs</time
+                            >
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </template>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                rel="noopener"
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://linkedin.com/heslopd23">Dylan Heslop</a>.
+        </div>
+
+        <script src="./assets/main.js" type="module" defer></script>
+    </body>
+</html>
